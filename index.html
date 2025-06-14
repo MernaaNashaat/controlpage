@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Concrete Mix UI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Concrete Mix UI</h2>
+    <label for="idName">Identification Name</label>
+    <input type="text" id="idName" placeholder="Mix1">
+
+    <label for="code">Code</label>
+    <input type="text" id="code" placeholder="M1">
+
+    <label for="material">Select Material</label>
+    <select id="material">
+      <option>Aggregate 101</option>
+      <option>Aggregate 102</option>
+      <option>Cement 101</option>
+      <option>Water 101</option>
+    </select>
+
+    <label for="quantity">Quantity (kg)</label>
+    <input type="number" id="quantity" placeholder="3.00">
+
+    <div class="button-group">
+      <button class="update-btn" onclick="updateMaterial()">Update Material</button>
+      <button class="delete-btn" onclick="deleteMaterial()">Delete Material</button>
+    </div>
+
+    <label for="description">Description</label>
+    <textarea id="description" rows="2"></textarea>
+
+    <label for="wcr">W/C Ratio</label>
+    <input type="number" step="0.01" id="wcr" placeholder="0.00">
+
+    <label for="timeLimit">Time Limit For Concrete Use (hrs)</label>
+    <input type="number" step="0.01" id="timeLimit" placeholder="0.00">
+
+    <label for="strength">Strength Class</label>
+    <select id="strength"></select>
+
+    <label for="slump">Slump Class</label>
+    <select id="slump"></select>
+
+    <label for="exposure">Exposure Class</label>
+    <select id="exposure"></select>
+
+    <label for="aggDiameter">Aggregate Max Diameter (mm)</label>
+    <input type="number" id="aggDiameter" placeholder="0.00">
+
+    <label for="wcrTolerance">Max Tolerance % for W/C Ratio</label>
+    <input type="number" step="0.01" id="wcrTolerance" placeholder="0.00"> 
+
+    <label for="Aggregate 101 (KG)">Aggregate 101</label>
+    <input type="text" id="Aggregate 101" placeholder="3.00">
+
+    <label for="Aggregate 102 (KG)">Aggregate 102</label>
+    <input type="text" id="Aggregate 102" placeholder="3.00">
+
+    <label for="Cement 102 (KG)">Cement 101 (KG)</label>
+    <input type="text" id="Cement 101" placeholder="1.80">
+
+    <label for="Water 102 (KG)">Water 101</label>
+    <input type="text" id="Water 101" placeholder="2.40">
+
+    
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
